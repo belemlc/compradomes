@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+//
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { ProdutoModule } from './produto/produto.module';
 
 @NgModule({
@@ -9,8 +12,11 @@ import { ProdutoModule } from './produto/produto.module';
     AppComponent
   ],
   imports: [
+    AppRoutingModule,
+    DashboardModule,
     BrowserModule,
-    ProdutoModule
+    ProdutoModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
