@@ -5,15 +5,31 @@ article.lista-produtos {
     padding: 0 !important;
     li {
       display: inline;
+      .produto-detalhes {
+        list-style: none;
+        li {
+          margin-left: 20px;
+          display: table;
+        }
+      }
     }
+  }
+  .produto-imagem {
+    padding: 5px;
   }
   .produto-nome {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     color: red;
   }
   .produto-preco {
     font-weight: bold;
     color: #000;
+    font-size: 12px;
+    span {
+      text-decoration: line-through;
+      color: #999;
+      font-weight: lighter !important;
+    }
   }
 }
