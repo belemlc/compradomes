@@ -1,13 +1,16 @@
 <div class="container-fluid">
   <header>
     <h5>Produtos</h5>
-    <button class="btn btn-link">Novo</button>
     <div class="row">
       <div class="col-12">
         <form class="">
           <input type="search" name="" class="form-control" placeholder="Digite o nome do produto">
         </form>
+        <br>
       </div>
+      <div class="col-12">
+          <button class="btn btn-primary" routerLink="/produto/save">Novo Produto</button>
+        </div>
     </div>
   </header>
   <article class="lista-produtos">
@@ -32,7 +35,7 @@
                       <li class="produto-nome">Arroz Tio João</li>
                       <li class="produto-preco">R$ 12,90 <span>R$ 15,85</span></li>
                       <li class="produto-categoria">
-                        <small class=""><i class="fa fa-id-card-o" aria-hidden="true"></i> Condimentos</small>
+                        <small class="">Condimentos</small>
                       </li>
                     </ul>
                   </div>

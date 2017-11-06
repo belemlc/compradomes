@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <form #produtoForm="ngForm" novalidate>
+        <div class="form-group">
+            <label for="produto"><i class="fa fa-cart-plus" aria-hidden="true"></i> Produto</label>
+            <input type="text" name="nome" class="form-control" [(ngModel)]="produto.nome" placeholder="Nome do produto">
+        </div>
+        <div class="form-group" *ngIf="precoAntigo">
+            <label for="produto"><i class="fa fa-money" aria-hidden="true"></i> Preço Antigo</label>
+            <input type="text" name="preco" class="form-control" id="" placeholder="Preço do produto">
+        </div>
+        <div class="form-group">
+            <label for="produto"><i class="fa fa-money" aria-hidden="true"></i> Preço</label>
+            <input type="text" name="preco" class="form-control" [(ngModel)]="produto.preco" placeholder="Preço do produto">
+        </div>
+        <div class="form-group">
+            <label for="produto"><i class="fa fa-upload" aria-hidden="true"></i> Foto</label>
+            <label class="custom-file">
+                <input type="file" name="foto" #fileInput class="custom-file-input">
+                <span class="custom-file-control"></span>
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="categoria"><i class="fa fa-list-ul" aria-hidden="true"></i> Categoria</label>
+            <select name="categoria" class="form-control custom-select" [(ngModel)]="produto.categoria">
+                <option>Selecione</option>
+                <option [value]="c._id" *ngFor="let c of categorias">{{c.nome}}</option>
+            </select>
+        </div>
+        <button type="submit" (click)="save(produtoForm)" class="btn btn-block btn-primary">Submit</button>
+    </form>
+</div>
