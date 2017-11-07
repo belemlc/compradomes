@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { ProdutoModule } from './produto/produto.module';
+import { UploadFotoModule } from './upload-foto/upload-foto.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProdutoModule } from './produto/produto.module';
     ProdutoModule,
     FormsModule,
     RouterModule,
-    HttpModule
+    HttpModule,
+    UploadFotoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

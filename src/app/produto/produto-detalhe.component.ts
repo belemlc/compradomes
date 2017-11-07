@@ -11,7 +11,7 @@ import { FormGroup } from '@angular/forms';
     templateUrl: './produto-detalhe.component.html',
     providers: [
         CategoriaService,
-        ProdutoService,
+        ProdutoService
     ]
 })
 export class ProdutoDetalheComponent implements OnInit {
