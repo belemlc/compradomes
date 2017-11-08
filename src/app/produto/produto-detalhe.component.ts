@@ -17,7 +17,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class ProdutoDetalheComponent implements OnInit {
 
     @ViewChild('fileInput') fileInput: ElementRef;
-    private categorias: Categoria[];
+    categorias: Categoria[];
     produto: Produto;
     form: FormGroup;
     
