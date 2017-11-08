@@ -4,7 +4,7 @@ export class Produto {
 
     public nome: string;
     public preco: number;
-    public foto: string|any;
+    public foto: object;
     public categoria: Categoria;
 
 }

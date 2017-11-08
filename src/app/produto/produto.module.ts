@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { UploadFotoModule } from '../upload-foto/upload-foto.module';
 import { ProdutoRoutingModule } from './produto-routing.module';
@@ -12,7 +12,8 @@ import { ProdutoDetalheComponent } from './produto-detalhe.component';
     CommonModule,
     FormsModule,
     ProdutoRoutingModule,
-    UploadFotoModule
+    UploadFotoModule,
+    ReactiveFormsModule
   ],
   declarations: [
     ProdutoDetalheComponent,
